@@ -3,7 +3,10 @@ Dockerized Eddystone BLE beacon for Raspberry Pi
 
 ## How to run
 
-
+```bash
+docker build -t flatlining/eddystone-url .
+docker run -it --net host --rm flatlining/eddystone-url bash
+```
 
 ## References
 
