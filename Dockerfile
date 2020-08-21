@@ -1,6 +1,4 @@
-FROM resin/rpi-raspbian:jessie-20160831
-
-MAINTAINER Matias Schertel <mschertel@gmail.com>
+FROM balenalib/raspberrypi3-debian-python:latest
 
 # Environment
 ENV DEBIAN_FRONTEND=noninteractive
