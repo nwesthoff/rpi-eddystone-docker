@@ -17,4 +17,4 @@ RUN apt-get autoremove -y && apt-get autoclean -y && apt-get clean -y
 # Remove unecessary files
 RUN rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
-CMD ["bash"]
+CMD ["bash", "PyBeacon -i 894c86f16ab46735b0565028d5c52f49"]
