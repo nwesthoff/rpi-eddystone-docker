@@ -17,4 +17,6 @@ RUN apt-get autoremove -y && apt-get autoclean -y && apt-get clean -y
 # Remove unecessary files
 RUN rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
-ENTRYPOINT "PyBeacon -i $BEACON_ID" && #!/bin/bash
+COPY ./start.sh /
+RUN chmod +x /start.sh
+ENTRYPOINT ["/start.sh"]
