@@ -2,6 +2,7 @@ FROM balenalib/raspberrypi3-debian-python:latest
 
 # Environment
 ENV DEBIAN_FRONTEND=noninteractive
+ENV $HOSTNAME=127.0.0.1
 
 # Upgrade system
 RUN apt-get update && apt-get upgrade -y
